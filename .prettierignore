@@ -1,0 +1,18 @@
+# editor
+.vscode
+
+# dependencies
+node_modules
+
+# build
+.next
+next-env.d.ts
+
+# test
+coverage
+
+# secrets
+.env*
+
+# templates
+*.hbs
