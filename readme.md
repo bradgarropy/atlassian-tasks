@@ -1,4 +1,4 @@
-# ⏭ next.js starter
+# ☑ atlassian tasks
 
 _A base starter with formatting, linting, serverless, CSS in JS, and SEO included._
 
@@ -10,8 +10,8 @@ _A base starter with formatting, linting, serverless, CSS in JS, and SEO include
 [![discord][discord-badge]][discord]
 
 <p align="center">
-    <a href="https://next-starter.bradgarropy.vercel.app">
-        <img alt="next starter" src="./public/github.png" width="300">
+    <a href="https://atlassian-tasks.vercel.app">
+        <img alt="atlassian tasks" src="./public/github.png" width="300">
     </a>
 </p>
 
@@ -22,7 +22,7 @@ _A base starter with formatting, linting, serverless, CSS in JS, and SEO include
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://bradgarropy.com"><img src="https://avatars.githubusercontent.com/u/11336745?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brad Garropy</b></sub></a><br /><a href="https://github.com/bradgarropy/next-starter/commits?author=bradgarropy" title="Code">💻</a> <a href="#design-bradgarropy" title="Design">🎨</a> <a href="https://github.com/bradgarropy/next-starter/commits?author=bradgarropy" title="Documentation">📖</a> <a href="#infra-bradgarropy" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/bradgarropy/next-starter/commits?author=bradgarropy" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://bradgarropy.com"><img src="https://avatars.githubusercontent.com/u/11336745?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brad Garropy</b></sub></a><br /><a href="https://github.com/bradgarropy/atlassian-tasks/commits?author=bradgarropy" title="Code">💻</a> <a href="#design-bradgarropy" title="Design">🎨</a> <a href="https://github.com/bradgarropy/atlassian-tasks/commits?author=bradgarropy" title="Documentation">📖</a> <a href="#infra-bradgarropy" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/bradgarropy/atlassian-tasks/commits?author=bradgarropy" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
@@ -31,15 +31,15 @@ _A base starter with formatting, linting, serverless, CSS in JS, and SEO include
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[vercel]: https://vercel.com/bradgarropy/next-starter
-[vercel-badge]: https://img.shields.io/github/deployments/bradgarropy/next-starter/production?label=vercel&style=flat-square
-[github-actions]: https://github.com/bradgarropy/next-starter/actions
-[github-actions-badge]: https://img.shields.io/github/workflow/status/bradgarropy/next-starter/%F0%9F%A7%AA%20test?style=flat-square
-[codecov]: https://app.codecov.io/gh/bradgarropy/next-starter
-[codecov-badge]: https://img.shields.io/codecov/c/github/bradgarropy/next-starter?style=flat-square
-[contributing]: https://github.com/bradgarropy/next-starter/blob/master/contributing.md
+[vercel]: https://vercel.com/bradgarropy/atlassian-tasks
+[vercel-badge]: https://img.shields.io/github/deployments/bradgarropy/atlassian-tasks/production?label=vercel&style=flat-square
+[github-actions]: https://github.com/bradgarropy/atlassian-tasks/actions
+[github-actions-badge]: https://img.shields.io/github/workflow/status/bradgarropy/atlassian-tasks/%F0%9F%A7%AA%20test?style=flat-square
+[codecov]: https://app.codecov.io/gh/bradgarropy/atlassian-tasks
+[codecov-badge]: https://img.shields.io/codecov/c/github/bradgarropy/atlassian-tasks?style=flat-square
+[contributing]: https://github.com/bradgarropy/atlassian-tasks/blob/master/contributing.md
 [contributing-badge]: https://img.shields.io/badge/PRs-welcome-success?style=flat-square
 [contributors]: #-Contributors
-[contributors-badge]: https://img.shields.io/github/all-contributors/bradgarropy/next-starter?style=flat-square
+[contributors-badge]: https://img.shields.io/github/all-contributors/bradgarropy/atlassian-tasks?style=flat-square
 [discord]: https://bradgarropy.com/discord
 [discord-badge]: https://img.shields.io/discord/748196643140010015?style=flat-square

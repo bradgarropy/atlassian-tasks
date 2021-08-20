@@ -6,7 +6,8 @@ import {FC} from "react"
 
 const IndexPage: FC = () => (
     <Layout>
-        <SEO title="next starter" />
+        <SEO title="☑ tasks" />
+
         {tasks.map(task => {
             return <Task key={task.id} task={task} />
         })}
