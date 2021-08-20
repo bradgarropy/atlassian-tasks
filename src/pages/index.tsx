@@ -8,7 +8,7 @@ const IndexPage: FC = () => (
     <Layout>
         <SEO title="next starter" />
         {tasks.map(task => {
-            return <Task task={task} />
+            return <Task key={task.id} task={task} />
         })}
     </Layout>
 )
