@@ -1,4 +1,4 @@
-GET /tasks
+GET /tasks?id
 
 GET /assignee?taskId
 

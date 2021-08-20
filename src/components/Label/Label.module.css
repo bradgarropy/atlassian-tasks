@@ -1,0 +1,8 @@
+.label {
+    color: white;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}

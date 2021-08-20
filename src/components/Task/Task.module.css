@@ -1,0 +1,9 @@
+.task {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.expand {
+    width: 1.5rem;
+}
