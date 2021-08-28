@@ -10,6 +10,7 @@ type TaskProps = Pick<TaskType, "id">
 const Task: FC<TaskProps> = ({id}) => {
     const taskCtx = useTasks()
     const task = taskCtx.tasks.find(task => task.id === id)
+    const taskElementId = `task-${task.id}-isCompleted`
 
     const labels = taskCtx.labels.filter(label =>
         label.taskIds.includes(task.id),
@@ -26,12 +27,12 @@ const Task: FC<TaskProps> = ({id}) => {
             <input
                 type="checkbox"
                 name="isCompleted"
-                id="isCompleted"
+                id={taskElementId}
                 checked={task.isCompleted}
                 onChange={onChange}
             />
 
-            <label htmlFor="isCompleted" className={styles.taskLabel}>
+            <label htmlFor={taskElementId} className={styles.taskLabel}>
                 {task.name}
             </label>
 
