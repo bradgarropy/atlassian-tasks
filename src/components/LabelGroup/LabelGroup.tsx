@@ -9,7 +9,7 @@ type LabelGroupProps = {
     maxLabels?: number
 }
 
-const LabelGroup: FC<LabelGroupProps> = ({labels, maxLabels = 3}) => {
+const LabelGroup: FC<LabelGroupProps> = ({labels, maxLabels = 2}) => {
     const shownLabels = labels.slice(0, maxLabels)
     const hiddenLabels = labels.slice(maxLabels)
 

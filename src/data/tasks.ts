@@ -20,13 +20,13 @@ const tasks: Task[] = [
         isCompleted: false,
     },
     {
-        id: 4,
+        id: 3,
         name: "Task 3",
         description: "",
         isCompleted: false,
     },
     {
-        id: 3,
+        id: 4,
         name: "Task 4",
         description: "",
         isCompleted: false,

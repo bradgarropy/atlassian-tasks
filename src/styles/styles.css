@@ -17,6 +17,6 @@ body {
 }
 
 .container {
-    margin: auto;
+    margin: 5rem auto;
     max-width: 1000px;
 }

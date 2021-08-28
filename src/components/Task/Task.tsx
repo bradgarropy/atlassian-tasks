@@ -1,15 +1,26 @@
 import LabelGroup from "components/LabelGroup"
-import {labels} from "data/labels"
 import {Task as TaskType} from "data/tasks"
+import useTasks from "hooks/useTasks"
 import {FC} from "react"
 
 import styles from "./Task.module.css"
 
-type TaskProps = {
-    task: TaskType
-}
+type TaskProps = Pick<TaskType, "id">
 
-const Task: FC<TaskProps> = ({task}) => {
+const Task: FC<TaskProps> = ({id}) => {
+    const taskCtx = useTasks()
+    const task = taskCtx.tasks.find(task => task.id === id)
+
+    const labels = taskCtx.labels.filter(label =>
+        label.taskIds.includes(task.id),
+    )
+
+    const onChange = event => {
+        const isCompleted = event.currentTarget.checked
+        const newTask = {...task, isCompleted}
+        taskCtx.updateTask(newTask)
+    }
+
     return (
         <div className={styles.task}>
             <input
@@ -17,9 +28,13 @@ const Task: FC<TaskProps> = ({task}) => {
                 name="isCompleted"
                 id="isCompleted"
                 checked={task.isCompleted}
+                onChange={onChange}
             />
 
-            <label htmlFor="isCompleted">{task.name}</label>
+            <label htmlFor="isCompleted" className={styles.taskLabel}>
+                {task.name}
+            </label>
+
             <LabelGroup labels={labels} />
 
             <svg

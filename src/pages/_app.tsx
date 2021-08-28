@@ -1,6 +1,7 @@
 import "../styles/styles.css"
 
 import SEO from "@bradgarropy/next-seo"
+import {TaskProvider} from "context"
 import type {AppProps} from "next/app"
 import {ReactElement} from "react"
 
@@ -26,7 +27,9 @@ const App = ({Component, pageProps}: AppProps): ReactElement => {
                 }}
             />
 
-            <Component {...pageProps} />
+            <TaskProvider>
+                <Component {...pageProps} />
+            </TaskProvider>
         </>
     )
 }

@@ -1,17 +1,21 @@
 import SEO from "@bradgarropy/next-seo"
 import Layout from "components/Layout"
 import Task from "components/Task"
-import {tasks} from "data/tasks"
+import useTasks from "hooks/useTasks"
 import {FC} from "react"
 
-const IndexPage: FC = () => (
-    <Layout>
-        <SEO title="☑ tasks" />
+const IndexPage: FC = () => {
+    const taskCtx = useTasks()
 
-        {tasks.map(task => {
-            return <Task key={task.id} task={task} />
-        })}
-    </Layout>
-)
+    return (
+        <Layout>
+            <SEO title="☑ tasks" />
+
+            {taskCtx.tasks.map(task => {
+                return <Task key={task.id} id={task.id} />
+            })}
+        </Layout>
+    )
+}
 
 export default IndexPage
