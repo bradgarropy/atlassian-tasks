@@ -1,2 +1,4 @@
-.task-details {
+.taskDetails {
+    max-width: 10rem;
+    margin-bottom: 2rem;
 }

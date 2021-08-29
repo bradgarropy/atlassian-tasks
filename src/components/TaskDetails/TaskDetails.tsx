@@ -1,18 +1,22 @@
 import Assignee from "components/Assignee"
-import {Assignee as AssigneeType} from "data/assignees"
 import {Task} from "data/tasks"
+import useTasks from "hooks/useTasks"
 import {FC} from "react"
 
 import styles from "./TaskDetails.module.css"
 
-type TaskDetailsProps = {
-    task: Task
-    assignee: AssigneeType
-}
+type TaskDetailsProps = Pick<Task, "id">
 
-const TaskDetails: FC<TaskDetailsProps> = ({task, assignee}) => {
+const TaskDetails: FC<TaskDetailsProps> = ({id}) => {
+    const taskCtx = useTasks()
+    const task = taskCtx.tasks.find(task => task.id === id)
+
+    const assignee = taskCtx.assignees.find(assignee =>
+        assignee.taskIds.includes(task.id),
+    )
+
     return (
-        <div className={styles.taskdetails}>
+        <div className={styles.taskDetails}>
             <p>{task.description}</p>
             <Assignee assignee={assignee} />
         </div>

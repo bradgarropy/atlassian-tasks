@@ -1,5 +1,10 @@
 .task {
     display: grid;
+    grid-auto-flow: row;
+}
+
+.taskSummary {
+    display: grid;
     grid-auto-flow: column;
     align-items: center;
     grid-template-columns: auto 12rem 1fr auto;
