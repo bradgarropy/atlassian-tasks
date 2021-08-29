@@ -16,7 +16,7 @@ const TaskDetails: FC<TaskDetailsProps> = ({id}) => {
     )
 
     return (
-        <div className={styles.taskDetails}>
+        <div className={`${styles.taskDetails} ${styles.slidein}`}>
             <p>{task.description}</p>
             <Assignee assignee={assignee} />
         </div>

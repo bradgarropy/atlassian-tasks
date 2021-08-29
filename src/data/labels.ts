@@ -7,22 +7,22 @@ type Label = {
 const labels: Label[] = [
     {
         label: "ui",
-        color: "gray",
+        color: "lightgray",
         taskIds: [1],
     },
     {
         label: "sprint 1",
-        color: "blue",
+        color: "lightskyblue",
         taskIds: [1, 2],
     },
     {
         label: "backend",
-        color: "green",
+        color: "palegreen",
         taskIds: [3, 4],
     },
     {
         label: "pir",
-        color: "yellow",
+        color: "gold",
         taskIds: [3],
     },
     {

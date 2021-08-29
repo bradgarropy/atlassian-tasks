@@ -2,7 +2,7 @@ import LabelGroup from "components/LabelGroup"
 import TaskDetails from "components/TaskDetails"
 import {Task as TaskType} from "data/tasks"
 import useTasks from "hooks/useTasks"
-import {FC, useState} from "react"
+import {FC, useEffect, useRef, useState} from "react"
 
 import styles from "./Task.module.css"
 
@@ -12,6 +12,12 @@ const Task: FC<TaskProps> = ({id}) => {
     const taskCtx = useTasks()
 
     const [isExpanded, setIsExpanded] = useState(false)
+    const expandRef = useRef(null)
+
+    useEffect(() => {
+        const rotation = isExpanded ? "90deg" : "0deg"
+        expandRef.current.style.setProperty("--rotation", rotation)
+    }, [isExpanded])
 
     const task = taskCtx.tasks.find(task => task.id === id)
     const taskElementId = `task-${task.id}-isCompleted`
@@ -49,8 +55,8 @@ const Task: FC<TaskProps> = ({id}) => {
                 <LabelGroup labels={labels} />
 
                 <svg
+                    ref={expandRef}
                     className={styles.expand}
-                    fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                     onClick={onClick}

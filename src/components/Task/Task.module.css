@@ -1,13 +1,14 @@
 .task {
     display: grid;
     grid-auto-flow: row;
+    max-width: 30rem;
 }
 
 .taskSummary {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    grid-template-columns: auto 12rem 1fr auto;
+    grid-template-columns: auto 16rem 1fr auto;
     column-gap: 1rem;
 }
 
@@ -18,5 +19,9 @@
 }
 
 .expand {
+    --rotation: 0deg;
+
+    transform: rotate(var(--rotation));
     width: 1.5rem;
+    transition: all 200ms ease-out;
 }
