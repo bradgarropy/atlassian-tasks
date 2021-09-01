@@ -1,3 +1,7 @@
+import {assignees} from "data/assignees"
+import {labels} from "data/labels"
+import {tasks} from "data/tasks"
+
 const mockMeta = {
     title: "☑ tasks",
 }
@@ -18,4 +22,30 @@ const mockTwitter = {
     image: "https://atlassian-tasks.vercel.app/twitter.png",
 }
 
-export {mockFacebook, mockMeta, mockTwitter}
+const mockAssignees = assignees
+const mockAssignee = mockAssignees[0]
+const mockLabels = labels
+const mockLabel = mockLabels[0]
+const mockTasks = tasks
+const mockTask = mockTasks[0]
+const mockIncompleteTask = mockTasks[1]
+
+const mockTaskCtx = {
+    tasks: mockTasks,
+    labels: mockLabels,
+    assignees: mockAssignees,
+    updateTask: jest.fn(),
+}
+
+export {
+    mockAssignee,
+    mockFacebook,
+    mockIncompleteTask,
+    mockLabel,
+    mockLabels,
+    mockMeta,
+    mockTask,
+    mockTaskCtx,
+    mockTasks,
+    mockTwitter,
+}

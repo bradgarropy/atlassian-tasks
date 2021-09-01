@@ -1,21 +1,3 @@
 .taskDetails {
     margin-bottom: 2rem;
 }
-
-.slidein {
-    animation-duration: 300ms;
-    animation-name: slideIn;
-    animation: slideIn 300ms ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-20%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}

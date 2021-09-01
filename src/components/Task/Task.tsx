@@ -1,7 +1,7 @@
 import LabelGroup from "components/LabelGroup"
 import TaskDetails from "components/TaskDetails"
 import {Task as TaskType} from "data/tasks"
-import useTasks from "hooks/useTasks"
+import {useTasks} from "hooks"
 import {FC, useEffect, useRef, useState} from "react"
 
 import styles from "./Task.module.css"
@@ -33,7 +33,6 @@ const Task: FC<TaskProps> = ({id}) => {
     }
 
     const onClick = () => {
-        console.log("onClick")
         setIsExpanded(!isExpanded)
     }
 
@@ -60,6 +59,8 @@ const Task: FC<TaskProps> = ({id}) => {
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                     onClick={onClick}
+                    fill="currentColor"
+                    data-testid="expand"
                 >
                     <path
                         fillRule="evenodd"

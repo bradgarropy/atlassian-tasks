@@ -1,6 +1,6 @@
 import Assignee from "components/Assignee"
 import {Task} from "data/tasks"
-import useTasks from "hooks/useTasks"
+import {useTasks} from "hooks"
 import {FC} from "react"
 
 import styles from "./TaskDetails.module.css"
@@ -16,7 +16,7 @@ const TaskDetails: FC<TaskDetailsProps> = ({id}) => {
     )
 
     return (
-        <div className={`${styles.taskDetails} ${styles.slidein}`}>
+        <div className={styles.taskDetails}>
             <p>{task.description}</p>
             <Assignee assignee={assignee} />
         </div>

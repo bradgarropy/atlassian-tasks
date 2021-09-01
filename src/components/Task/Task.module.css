@@ -21,7 +21,7 @@
 .expand {
     --rotation: 0deg;
 
+    color: var(--gray);
     transform: rotate(var(--rotation));
     width: 1.5rem;
-    transition: all 200ms ease-out;
 }
