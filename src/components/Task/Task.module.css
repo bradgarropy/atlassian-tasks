@@ -1,7 +1,7 @@
 .task {
     display: grid;
     grid-auto-flow: row;
-    max-width: 30rem;
+    width: 30rem;
 }
 
 .taskSummary {
