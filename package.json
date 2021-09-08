@@ -1,7 +1,7 @@
 {
     "name": "atlassian-tasks",
     "version": "0.0.1",
-    "description": "☑ tasks",
+    "description": "☑ atlassian interview question - task list",
     "keywords": [
         "typescript",
         "react",
